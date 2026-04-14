@@ -425,8 +425,8 @@ section {
     rotate: 40deg;
     left: 570px;
     /* top: 1480px; */
-    /* top: 2200px; */
-    top: 2350px;
+    top: 2200px;
+    /* top: 2350px; */
     z-index: -10;
 }
 
@@ -435,11 +435,11 @@ section {
     width: 200px;
     height: 450px;
     rotate: 125deg;
-    /* left: 610px; */
-    left: 650px;
+    left: 610px;
+    /* left: 650px; */
     /* top:1750px; */
-    /* top: 2500px; */
-    top: 2630px;
+    top: 2500px;
+    /* top: 2630px; */
     z-index: -10;
 }
 .saltPath3 {
@@ -447,11 +447,11 @@ section {
     width: 100px;
     height: 380px;
     rotate: 55deg;
-    /* left: 650px; */
-    left: 750px;
+    left: 650px;
+    /* left: 750px; */
     /* top: 2200px; */
-    /* top: 2900px; */
-    top: 3000px;
+    top: 2900px;
+    /* top: 3000px; */
     z-index: -10;
 }
 .saltPath4 {
@@ -459,11 +459,11 @@ section {
     width: 90px;
     height: 480px;
     rotate: -59deg;
-    /* left: 720px; */
-    left: 740px;
+    left: 720px;
+    /* left: 740px; */
     /* top: 2450px; */
-    /* top: 3170px; */
-    top: 3270px;
+    top: 3170px;
+    /* top: 3270px; */
     z-index: -10;
 }
 
