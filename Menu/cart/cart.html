@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart | SteckHouse</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,100..900&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Science+Gothic&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./cart.css" />
+    </head>
+    <body>
+        <div id="main">
+            <div class="go-to-menu">
+                <a href="../menu.html" style="color: aliceblue; text-decoration: none;">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="30px"
+                        viewBox="0 -960 960 960"
+                        width="30px"
+                        fill="#fff"
+                    >
+                        <path
+                            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
+                        />
+                    </svg>
+                    Go To Menu
+                </a>
+            </div>
+            <div class="outerbox">
+                <div class="leftbox">
+                    <h1>Your Cart</h1>
+                    <div class="all-boxes">
+                        <div id="box1" class="box">
+                            <img
+                                src="https://img.freepik.com/free-psd/grilled-steak-with-lemon-tomatoes-arugula_632498-26088.jpg?semt=ais_hybrid&w=740&q=80"
+                            />
+                            <div class="part1">
+                                <h2>Veg Steck</h2>
+                                <h4>BreakFast</h4>
+                                <h3>10-15 minutes</h3>
+                            </div>
+                            <div class="part2">
+                                <h2 class="price">
+                                    Each <br />
+                                    $33
+                                </h2>
+                            </div>
+                            <div class="part3">
+                                <h2>Quantity</h2>
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="part4">
+                                <h2>
+                                    Total <br />
+                                    $33.99
+                                </h2>
+                            </div>
+                            <div class="remove">Remove</div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="rightbox">
+                    <div class="promo">
+                        <p>ENTER PROMO CODE</p>
+                        <input
+                            type="text"
+                            placeholder="PROMO CODE"
+                            id="promo"
+                        />
+                        <button type="button">Apply</button>
+                    </div>
+                    <div class="bills">
+                        <div class="row">
+                            <span>Total Cost</span>
+                            <span>TBD</span>
+                        </div>
+                       
+                        <div class="row">
+                            <span>Tax</span>
+                            <span class="taxes">TBD</span>
+                        </div>
+
+                        <div class="row">
+                            <span>Discount</span>
+                            <span class="discount">- $0</span>
+                        </div>
+
+                        <hr />
+                        <div class="row total">
+                            <span>Estimated Total</span>
+                            <span class="grandTotal">$39.99</span>
+                        </div>
+                    </div>
+                    <p class="delivery-message">
+                        *Home delivery is currently unavailable. Orders must be
+                        placed for dine-in.*
+                    </p>
+                    <p class="free-message">
+                        You are <span>10.99$</span> far from a free desert
+                    </p>
+                    <button class="Checkout">
+                        <a href="../menu.html" style="text-decoration: none; color: black;">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#000"
+                            >
+                                <path
+                                    d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"
+                                />
+                            </svg>
+                            Checkout
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./cart.js"></script>
+    </body>
+</html>

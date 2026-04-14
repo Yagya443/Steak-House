@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Science+Gothic:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+
+    <nav>
+        <div id="logo">SteckHouse</div>
+        <div id="names">
+            <div>
+                <a
+                    href="../index.html"
+                    style="text-decoration: none; color: white"
+                    >Home</a
+                >
+            </div>
+            <div>
+                <a
+                    href="../About/about.html"
+                    style="text-decoration: none; color: white"
+                    >About Us</a
+                >
+            </div>
+            <div>
+                <a
+                    href="../Menu/menu.html"
+                    style="text-decoration: none; color: white"
+                    >Menu</a
+                >
+            </div>
+
+            <div id="event">Event</div>
+            <div id="contact">Contact</div>
+            <!-- <select name="language" id="language">
+                <option value="" disabled selected>EN</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+            </select> -->
+        </div>
+                    <svg class="threeLine" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg class="cross" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    </nav>
+
+    <body>
+        <div class="cursor"></div>
+        <div class="main">
+            <iframe
+                class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32603389.35734323!2d-29.35546875000001!3d4.039617826768437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d0354a37b45%3A0xe5cd5cab33a299d6!2sAfrican%20food!5e0!3m2!1sen!2sin!4v1764269014359!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div id="right">
+                <h2>Get In Touch</h2>
+                <form>
+                    <div class="name">
+                        <input placeholder="First Name" />
+                        <input placeholder="Last Name" />
+                    </div>
+                    <div class="contact">
+                        <input type="tel" placeholder="Phone Number" />
+                    </div>
+                    <div class="email">
+                        <input placeholder="Your Email" />
+                    </div>
+                    <textarea
+                        class="help-box"
+                        maxlength="200"
+                        placeholder="How Can We Help?"
+                    ></textarea>
+    
+                    <br />
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="loader"></div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+            integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+            integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="./contact.js"></script>
+    </body>
+</html>

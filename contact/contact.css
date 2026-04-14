@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    /* height: 100vh; */
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.707);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    width: 100vw;
+    z-index: 1000;
+    transition: height 0.2s ease;
+}
+
+nav #names {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    justify-content: flex-end;
+    padding-right: 70px;
+}
+
+nav #logo {
+    font-family: "Satisfy", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    color: coral;
+    padding-left: 70px;
+    font-size: 25px;
+}
+
+nav #names #language {
+    border: none;
+    font-size: 17px;
+    padding: 0px;
+    vertical-align: middle;
+    background-color: transparent;
+    color: white;
+}
+
+nav #names #language option {
+    padding: 0px;
+    border: none;
+    color: black;
+    background-color: transparent;
+}
+/* 
+.cursor {
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5px;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 1.5px;
+} */
+
+.cursor {
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5px;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 1.8px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+/* iframe:hover .cursor {
+    display: none;
+} */
+
+
+.maps {
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 40%;
+    /* min-width: 30%; */
+    height: 500px;
+    display: block;
+}
+
+#right {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: block;
+    width: 35%;
+    position: relative;
+    /* left: 55%;
+    top: 50%; */
+    /* transform: translate(0%, -50%); */
+    padding: 25px;
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.718); */
+}
+#right h2 {
+    font-family: "Science Gothic", sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#right input:focus {
+    outline: none;
+}
+
+#right input {
+    width: 40%;
+    font-size: 22px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.601);
+    padding: 10px 20px;
+    /* color: antiquewhite; */
+}
+#right .name {
+    display: flex;
+}
+#right .name :nth-child(1) {
+    display: flex;
+    margin-right: 20px;
+}
+
+#right .email input {
+    /* position: relative; */
+    margin-top: 20px;
+    width: 91%;
+}
+
+#right .contact input {
+    margin-top: 20px;
+    width: 91%;
+}
+
+#right .help-box {
+    position: relative;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 94%;
+}
+
+button {
+    background-color: rgb(59, 59, 247);
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    position: relative;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(59, 59, 247, 0.755);
+
+}
+
+.loader {
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+    position: fixed;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.loader.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+nav .cross {
+    display: none;
+}
+nav .threeLine {
+    display: none;
+}
+
+@keyframes l5 {
+    0% {
+        box-shadow: 25px 0 #ffffff, -25px 0 #8f8f8f;
+        background: #ffffff;
+    }
+    33% {
+        box-shadow: 25px 0 #ffffff, -25px 0 #8f8f8f;
+        background: #8f8f8f;
+    }
+    66% {
+        box-shadow: 25px 0 #8f8f8f, -25px 0 #ffffff;
+        background: #8f8f8f;
+    }
+    100% {
+        box-shadow: 25px 0 #8f8f8f, -25px 0 #ffffff;
+        background: #ffffff;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    #right {
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .maps {
+        margin-top: 100px;
+        width: 80%;
+        height: 500px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 700px) {
+    nav {
+        height: 75px;
+    }
+
+    nav #names {
+        font-size: 15px;
+        gap: 1.5em;
+        padding-right: 30px;
+    }
+    nav #logo {
+        padding-left: 40px;
+        font-size: 25px;
+    }
+   .main {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    #right {
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .maps {
+        margin-top: 100px;
+        width: 80%;
+        height: 500px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav #logo {
+        padding-left: 30px;
+    }
+
+    nav #names {
+        display: none;
+    }
+    nav .threeLine {
+        display: block;
+        margin-right: 35px;
+        z-index: 100;
+        cursor: pointer;
+    }
+    nav .cross {
+        cursor: pointer;
+        margin-right: 35px;
+        z-index: 100;
+    }
+    nav #names {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: black;
+        top: 0;
+        right: -54%;
+        width: 42%;
+        height: 100vh;
+        padding-top: 30px;
+        padding-left: 15px;
+        font-size: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: right 0.7s ease;
+        gap: 20px;
+    }
+
+    nav #names.active {
+        right: 0;
+    }
+    nav #names div {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .main {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    #right {
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .maps {
+        margin-top: 100px;
+        width: 80%;
+        height: 500px;
+        display: block;
+    }
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.707);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    font-size: 20px;
+    width: 100vw;
+    z-index: 1000;
+    transition: height 0.2s ease;
+}
+
+nav #names {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    justify-content: flex-end;
+    padding-right: 70px;
+}
+
+nav #logo {
+    font-family: "Satisfy", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    color: coral;
+    padding-left: 70px;
+    font-size: 25px;
+}
+
+nav #names #language {
+    border: none;
+    font-size: 17px;
+    padding: 0px;
+    vertical-align: middle;
+    background-color: transparent;
+    color: white;
+}
+
+nav #names #language option {
+    padding: 0px;
+    border: none;
+    color: black;
+    background-color: transparent;
+}

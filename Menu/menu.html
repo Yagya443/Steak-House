@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Menu | SteckHouse</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Science+Gothic:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="menu.css" />
+
+    </head>
+
+    <body>
+        <nav>
+            <div id="logo">SteckHouse</div>
+            <div id="names">
+                <div>
+                    <a
+                        href="../index.html"
+                        style="text-decoration: none; color: white"
+                        >Home</a
+                    >
+                </div>
+                <div><a href="./About/about.html"
+                    style="text-decoration: none; color: white">About Us</a></div>
+                <div>
+                    <a
+                        href="./Menu/menu.html"
+                        style="text-decoration: none; color: white"
+                        >Menu</a
+                    >
+                </div>
+
+                <div id="event">Event</div>
+                <div><a href="../contact/contect.html" style="color: white; text-decoration: none;">Contact</a></div>
+                <!-- <select name="language" id="language">
+                    <option value="" disabled selected>EN</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select> -->
+            </div>
+            <svg class="threeLine" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg class="cross" xmlns="http://www.w3.org/2000/svg"     height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </nav>
+
+
+        <div class="cursor"></div>
+
+
+     <div class="carousel-track">
+            <div class="group">
+                <div class="carousel-item active" id="Breakfast">Breakfast</a></div>
+                <div class="carousel-item" id="Beef">Beef</div>
+                <div class="carousel-item" id="Chicken">Chicken</div>
+                <div class="carousel-item" id="Pasta">Pasta</div>
+                <div class="carousel-item" id="Seafood">Seafood</div>
+                <div class="carousel-item" id="Vegan">Vegan</div>
+                <div class="carousel-item" id="Vegetarian">Vegetarian</div>
+            </div>
+            <div class="group">
+                <div class="carousel-item active" id="Breakfast">Breakfast</a></div>
+                <div class="carousel-item" id="Beef">Beef</div>
+                <div class="carousel-item" id="Chicken">Chicken</div>
+                <div class="carousel-item" id="Pasta">Pasta</div>
+                <div class="carousel-item" id="Seafood">Seafood</div>
+                <div class="carousel-item" id="Vegan">Vegan</div>
+                <div class="carousel-item" id="Vegetarian">Vegetarian</div>
+            </div>
+           
+        </div> 
+      <button class="addToCartList"><a href="./cart/cart.html" style="color: white; text-decoration: none;">View Cart</a></button>
+        <div class="cardInfo">
+            <svg class="cross" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+            <div id="left">
+                <img src="../images/927e97a7-b84e-48b9-9197-4ee27096b6fb (3).png">
+                <h2>Item Name </h2>
+                <h4>Item Type</h4>
+                <p>15-20 Minutes</p>
+            </div>
+            <hr>
+            <div id="right">
+                <h1>Description:</h1>
+                <p id="inst"></p>
+                <br>
+                <div class="rating">
+                    <h3>Ratings</h3>
+                    <span data-star="1">★</span>
+                    <span data-star="2">★</span>
+                    <span data-star="3">★</span>
+                    <span data-star="4">★</span>
+                    <span data-star="5">★</span>
+                </div>
+                <h3 class="varients">Varients</h3>
+                
+                <input type="radio" name="size" id="small" value="small"> 
+                <label for="small">Small</label><br>
+
+                <input type="radio" name="size" id="medium" value="medium"> 
+                <label for="medium">Medium</label><br>
+
+                <input type="radio" name="size" id="large" value="large"> 
+                <label for="large">Large</label><br>
+        
+                
+                <div class="quantity">
+                    <span class="decrease">-</span>
+                    <span class="number">1</span>
+                    <span class="increase">+</span>
+                </div>
+                <div class="addTo-cartBtn">
+                        <p class="addText">ADD TO CART</p>
+                        <div class="cart-add">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="30px"
+                                viewBox="0 -960 960 960"
+                                width="30px"
+                                fill="#FFFFFF"
+                            >
+                            <path
+                                    d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="cart-remove">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="30px"
+                                viewBox="0 -960 960 960"
+                                width="30px"
+                                fill="#FFFFFF"
+                                >
+                                <path
+                                d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                <h4>Happy Customers</h4>
+                <input placeholder="ADD A REVIEW" class="comment">
+
+                
+            </div>
+        </div>
+
+        
+        <div class="all-cards">
+            <div class="menu-card" data-name="steak">
+                <div class="front-card">
+                    <img src="../images/panFinal123.png" alt="Steak" />
+
+                    <h3>Grilled Steak</h3>
+                    <p id="desc">Lorem ipsum.</p>
+                    <p class="menu-price" price="499">$19.99</p>
+                    <div class="cart-2">+</div>
+                </div>
+                <div class="back-card">
+                    <h3>Grilled Steak</h3>
+                    <p class="ingre">Ingredients:</p>
+                    
+                    <p id="about-prod">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laboriosam provident velit accusantium consequuntur,
+                        maiores incidunt voluptates quae aut animi. Totam.
+                    </p>
+                    <div class="addTo-cartBtn">
+                        <p class="addText">ADD TO CART</p>
+                        <div class="cart-add">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="30px"
+                                viewBox="0 -960 960 960"
+                                width="30px"
+                                fill="#FFFFFF"
+                            >
+                            <path
+                                    d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="cart-remove">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="30px"
+                                viewBox="0 -960 960 960"
+                                width="30px"
+                                fill="#FFFFFF"
+                                >
+                                <path
+                                d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message"></div>
+        <div class="loader"></div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+            integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+            integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://unpkg.com/split-type"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script src="./menu.js"></script>
+    </body>
+</html>
