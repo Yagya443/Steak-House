@@ -425,7 +425,7 @@ section {
     rotate: 40deg;
     left: 570px;
     /* top: 1480px; */
-    top: 2200px;
+    top: 2120px;
     /* top: 2350px; */
     z-index: -10;
 }
@@ -438,7 +438,7 @@ section {
     left: 610px;
     /* left: 650px; */
     /* top:1750px; */
-    top: 2500px;
+    top: 2450px;
     /* top: 2630px; */
     z-index: -10;
 }
@@ -450,7 +450,7 @@ section {
     left: 650px;
     /* left: 750px; */
     /* top: 2200px; */
-    top: 2900px;
+    top: 2820px;
     /* top: 3000px; */
     z-index: -10;
 }
@@ -462,8 +462,8 @@ section {
     left: 720px;
     /* left: 740px; */
     /* top: 2450px; */
-    top: 3170px;
-    /* top: 3270px; */
+    /* top: 3170px; */
+    top: 3200px;
     z-index: -10;
 }
 
